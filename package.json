@@ -4,7 +4,8 @@
   "description": "api whatsapp not official",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js"
   },
   "author": "katacha",
   "license": "ISC",
