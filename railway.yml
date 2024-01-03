@@ -1,0 +1,5 @@
+services:
+  - name: wpp-api
+    type: node
+    env: production
+    port: $PORT
