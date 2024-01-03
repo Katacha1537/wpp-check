@@ -27,6 +27,7 @@ app.post('/new-instance', (req, res) => {
 
     client.on('qr', qr => {
         console.log(`QR RECEIVED for instance ${instanceId}:`);
+        console.log(`QR CODE: ${qr}`);
         qrcode.generate(qr, { small: true })
     });
 
