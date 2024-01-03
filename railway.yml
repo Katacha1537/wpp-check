@@ -3,3 +3,4 @@ services:
     type: node
     env: production
     port: $PORT
+    startCommand: npm run start
