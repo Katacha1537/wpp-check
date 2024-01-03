@@ -4,7 +4,7 @@
   "description": "API do WhatsApp não oficial",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start -- --omit=dev"
+    "start": "npx railway run npm start"
   },
   "author": "katacha",
   "license": "ISC",
@@ -16,6 +16,6 @@
     "body-parser": "^1.20.2",
     "express": "^4.17.1",
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^2.0.0"
+    "whatsapp-web.js": "^2.1.0"
   }
 }
