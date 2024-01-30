@@ -1,7 +1,7 @@
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const express = require('express');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
 const app = express();
 const port = process.env.PORT || 8000;
@@ -28,7 +28,7 @@ app.post('/new-instance', (req, res) => {
     client.on('qr', qr => {
         console.log(`QR RECEIVED for instance ${instanceId}:`);
         console.log(`QR CODE: ${qr}`);
-        qrcode.generate(qr, { small: true })
+        qrcode.generate(qr, { small: true });
     });
 
     client.on('ready', () => {
@@ -60,7 +60,7 @@ app.post('/:instanceId/send-message', (req, res) => {
         .catch(err => {
             res.status(500).json({ status: 'error', response: err });
         });
-});
+})
 
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
